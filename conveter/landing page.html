@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Landing Page</title>
+        <style>
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .container-wrapper {
+                display: flex;
+                justify-content: center;
+                width: 55%;
+                margin-top: 20px;
+            }
+            .container {
+                width: 50%;
+                height: 20vh;
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 20px;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .container:nth-child(odd) {
+                background-color: #f2f2f2;
+            }
+            .container:nth-child(even) {
+                background-color: #e6e6e6;
+            }
+            .heading1, .heading2 {
+                margin: 0%;
+                font-size: 36px;
+                cursor: pointer;
+                background-color: white;
+                display: inline-block;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading1">
+            <h3><b>ArEicon Labs</b></h3>
+        </div>
+        <div class="heading2">
+            <h4>ArEicon Labs present you with useful tools</h4>
+        </div>
+        <div class="container-wrapper">
+            <div class="container" onclick="location.href='UnitConveter.html'">
+                <h3>Land Area Converter</h3>
+                <p>Convert land area between ropani, bigha, square feet/meter system</p>
+            </div>
+            <div class="container" onclick="location.href='UnitConveter.html'">
+                <h3>Unit Converter</h3>
+                <p>Convert between various units for length, area, weight, height, temperature</p>
+            </div>
+        </div>
+    </body>
+</html>
